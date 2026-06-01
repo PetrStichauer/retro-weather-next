@@ -1,0 +1,16 @@
+{
+  "name": "RetroWeather 3000",
+  "short_name": "RetroWeather",
+  "description": "A nostalgic 90s dial-up weather app — no API key required.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00aaaa",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

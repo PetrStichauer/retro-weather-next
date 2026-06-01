@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  background-image: 
+    linear-gradient(#00aaaa 1px, transparent 1px),
+    linear-gradient(90deg, #00aaaa 1px, transparent 1px);
+  background-size: 20px 20px;
+  min-height: 100vh;
+}
+
+.retro-border {
+  border: 3px solid #00aaaa;
+  box-shadow: 
+    4px 4px 0px #ff00ff,
+    -2px -2px 0px #ffff00;
+}
+
+.retro-btn {
+  background: #000000;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+.retro-btn:hover {
+  background: #00ffff;
+  color: #000000;
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+}
+
+.retro-input {
+  background: #000000;
+  border: 2px solid #ff00ff;
+  color: #ffff00;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 8px 12px;
+  outline: none;
+}
+
+.retro-input:focus {
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.retro-link {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+.retro-link:hover {
+  color: #ff00ff;
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.scroller {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.marquee-track {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
