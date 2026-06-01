@@ -40,8 +40,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="font-retro text-retro-teal">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-retro text-retro-teal" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   )
 }
